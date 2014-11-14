@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>M3U8Player</name>
+	<comment></comment>
+	<projects>
+		<project>FlexliteCops</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[source path] src</name>
+			<type>2</type>
+			<location>E:/TechTerms/FlashPlatForm/ActionScript3_Frameworks/FlexliteFramework/src</location>
+		</link>
+		<link>
+			<name>bin-release</name>
+			<type>2</type>
+			<location>E:/WeiXinServiceSunTV/public/swf</location>
+		</link>
+	</linkedResources>
+</projectDescription>
