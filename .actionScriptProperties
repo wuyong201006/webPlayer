@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <actionScriptProperties analytics="false" mainApplicationPath="M3U8Player.as" projectUUID="7c092eb4-2206-47a7-a4fd-efebbfc0a475" version="11">
   <compiler additionalCompilerArguments="-locale en_US" advancedTelemetry="false" autoRSLOrdering="true" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="false" includeNetmonSwc="false" outputFolderPath="bin" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="11.0.0" useApolloConfig="false" useDebugRSLSwfs="true" useFlashSDK="true" verifyDigests="true" warn="true">
-    <compilerSourcePath>
-      <compilerSourcePathEntry kind="1" linkType="1" path="E:/TechTerms/FlashPlatForm/ActionScript3_Frameworks/FlexliteFramework/src"/>
-    </compilerSourcePath>
+    <compilerSourcePath/>
     <libraryPath defaultLinkType="0">
       <libraryPathEntry kind="4" path="">
         <excludedEntries>
@@ -30,11 +28,6 @@
           <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation_agent.swc" useDefaultLinkType="false"/>
         </excludedEntries>
       </libraryPathEntry>
-      <libraryPathEntry kind="3" linkType="1" path="E:/TechTerms/FlashPlatForm/ActionScript3_Libs/HLSprovider/lib/HLSProvider.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="E:/天脉工作目录/4.微信开发项目/M3U8Player/M8U8Weplayer切图/weplayer.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="E:/TechTerms/FlashPlatForm/ActionScript3_Libs/tweener.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="1" linkType="1" path="${DOCUMENTS}/FlexliteCops/bin"/>
-      <libraryPathEntry kind="3" linkType="1" path="E:/TechTerms/FlashPlatForm/ActionScript3_Libs/as3corelib.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="1" linkType="1" path="lib"/>
     </libraryPath>
     <sourceAttachmentPath/>

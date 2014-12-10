@@ -3,6 +3,8 @@ package
 	import com.adobe.crypto.MD5;
 	import com.alex.flexlite.components.VideoUI;
 	
+	import flash.display.Loader;
+	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.FullScreenEvent;
 	import flash.events.IOErrorEvent;
@@ -23,9 +25,11 @@ package
 	import caurina.transitions.Tweener;
 	
 	import org.flexlite.domCore.Injector;
+	import org.flexlite.domUI.components.Group;
 	import org.flexlite.domUI.components.Label;
 	import org.flexlite.domUI.components.UIAsset;
 	import org.flexlite.domUI.core.Theme;
+	import org.flexlite.domUI.core.UIComponent;
 	import org.flexlite.domUI.managers.SystemManager;
 	import org.flexlite.domUI.skins.themes.VectorTheme;
 	import org.mangui.HLS.HLS;
@@ -538,6 +542,9 @@ package
 		//backforward
 		private var backtip:UIAsset;
 		
+		//Barrage
+		private var barrageLoader:Loader = new Loader();
+		private var barrage:UIComponent;
 		
 		//UI Comps
 		override protected function createChildren():void
@@ -630,7 +637,30 @@ package
 			topBar.top = - topBar.height;
 			
 			addElement(topBar);
+			
+			
+			barrageLoader.contentLoaderInfo.addEventListener(Event.COMPLETE,barrageCompletedHandler);
+			barrageLoader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,barrageErrorHandler);
+			barrageLoader.load(new URLRequest(this.loaderInfo.parameters.barrageurl));
 		}
+		
+		protected function barrageErrorHandler(event:IOErrorEvent):void
+		{
+			l('Barrage Loading Got Errors');	
+		}
+		
+		protected function barrageCompletedHandler(event:Event):void
+		{
+			barrage = barrageLoader.content as UIComponent;
+			
+			barrage.width = this.stage.stageWidth;
+			barrage.height = this.stage.stageHeight;
+			
+			addElement(barrage);
+			
+			l('Barrage is loaded.');
+		}
+		
 		
 		//播放流
 		protected function playMediaHanlder(event:MouseEvent):void
