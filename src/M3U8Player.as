@@ -11,10 +11,12 @@ package
 	import flash.events.MouseEvent;
 	import flash.external.ExternalInterface;
 	import flash.media.SoundTransform;
+	import flash.net.NetStream;
 	import flash.net.URLLoader;
 	import flash.net.URLRequest;
 	import flash.net.URLRequestMethod;
 	import flash.system.Security;
+	import flash.system.SecurityDomain;
 	import flash.utils.Timer;
 	import flash.utils.clearTimeout;
 	import flash.utils.setTimeout;
@@ -64,7 +66,8 @@ package
 			//Monitor Mouse Movement
 			addEventListener(MouseEvent.MOUSE_MOVE,userActiveHandler);
 			
-			Security.allowDomain('wechat.suntv.tv');
+//			Security.allowDomain('wechat.suntv.tv');
+			Security.allowDomain('wechat.suntv.tv', 'brtn.cn', 'tvm.cn');//媒体桥版本
 			
 			//积分post
 			urlLoader.addEventListener(Event.COMPLETE,creditPostHandler);
@@ -696,7 +699,7 @@ package
 					stopClock();
 					
 					//积分处理
-					postCredit();
+//					postCredit();//媒体桥版本不加积分 
 				}
 			}
 		}
