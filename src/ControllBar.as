@@ -1,8 +1,5 @@
 package
 {
-	import com.ww.events.uievent.SliderBarEvent;
-	import com.ww.ui.VolumeBar;
-	
 	import flash.display.Bitmap;
 	import flash.display.StageDisplayState;
 	import flash.events.Event;
@@ -15,7 +12,6 @@ package
 	import org.flexlite.domUI.components.Group;
 	import org.flexlite.domUI.components.HSlider;
 	import org.flexlite.domUI.components.Rect;
-	import org.flexlite.domUI.components.UIAsset;
 	import org.mangui.HLS.HLS;
 	import org.mangui.HLS.HLSEvent;
 	import org.mangui.HLS.HLSPlayStates;
